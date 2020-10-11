@@ -1,0 +1,272 @@
+body
+    font-family: 'Open Sans', sans-serif
+    box-sizing: border-box
+.container
+    max-width: 1290px
+    margin: 0 auto
+a
+    text-decoration: none
+    color: #000
+header 
+    height: 92px
+    width: 100%
+    padding: 19px 0 29px
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    .header__hamburger
+        width: 32px
+        height: 10px
+        position: relative
+    .header__hamburger:hover
+        cursor: pointer
+    .header__hamburger::before
+        position: absolute
+        content: ''
+        top: 0
+        left: 0
+        width: 32px
+        height: 2px
+        background-color: #000
+    .header__hamburger::after
+        position: absolute
+        content: ''
+        bottom: 0
+        left: 0
+        width: 17px
+        height: 2px
+        background-color: #000
+    .header__nav
+        width: 408px
+        ul
+            list-style: none
+            display: flex
+            justify-content: space-between
+            padding: 0
+    .header__icons
+        display: flex
+        width: 53px
+        justify-content: space-between
+    .header__contacts__phone
+        font-weight: bold
+        letter-spacing: 0.05em
+    .header__contacts__email
+        font-weight: 100
+    .header__button
+        width: 190px
+        height: 52px
+        background: #BF2738
+        border-radius: 14px
+        display: flex
+        justify-content: center
+        align-items: center
+        a
+            color: #fff
+            text-transform: uppercase
+.home-contacts
+    height: 60px
+    background: #F5F5F5
+    border-bottom: 1px solid #c7c7c7
+    display: flex
+    justify-content: center
+    align-items: center
+    &__menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 130px
+        font-size: 12px
+        &__general
+            color: #3b3b3b
+        &__border
+            width: 2px
+            height: 2px
+            background: #000
+            border-radius: 50%
+        &__contacts a
+            color: #797986
+.contacts__header
+    height: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #F5F5F5
+    &__content
+        text-transform: uppercase
+        font-size: 46px
+.contacts_and_feedback_form
+    padding: 62px 0 66px
+    .container
+        display: flex
+        justify-content: space-between
+    &__detailed__contacts
+        width: 50%
+        &__phone
+            font-size: 36px
+            color: #262633
+        &__email a
+            color: #BF2738
+            font-size: 25px
+        &__full_name
+            margin-top: 30px
+        &__requisites
+            &__data,
+            &__bank,
+            &__legal_address
+                margin-top: 30px
+                color: #797986
+    &__feedback_form
+        width: 50%
+        &__header
+            font-size: 36px
+            color: #262633
+        &__data
+            margin-top: 20px
+            width: 630px
+            &__phone_and_name
+                display: flex
+                justify-content: space-between
+                &__name,
+                &__phone
+                    box-sizing: border-box
+                    padding: 13px
+                    width: 48%
+                    border: none
+                    background:#F5F5F5
+                    border-radius: 14px
+            &__message
+                box-sizing: border-box
+                margin-top: 30px
+                padding: 12px
+                width: 100%
+                resize: none
+                border: none
+                background:#F5F5F5
+                border-radius: 14px
+            &__checkbox
+                font-size: 13px
+                margin-top: 20px
+                color: #797986
+            &__button
+                width: 190px
+                height: 50px
+                margin-top: 30px
+                background: #BF2738
+                border: none
+                border-radius: 14px
+                color: #fff
+                text-transform: uppercase
+                &:hover
+                    cursor: pointer
+.cities
+    padding: 60px 0 80px
+    .container
+        display: grid
+        grid-template-columns: repeat(4, 300px)
+        grid-template-rows: repeat(2, 310px)
+        grid-gap: 30px
+        .last-child
+            grid-column: 3 / -1
+    &__item
+        background: #F5F5F5
+        border-radius: 20px
+        padding: 30px 0 40px 20px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &__city_name
+            color: #262633
+            font-size: 26px
+            text-transform: uppercase
+        &__city_phones
+            margin-top: 15px
+            color: #262633
+            opacity: 0.79
+            font-size: 19px
+            a
+                display: inline-block
+        &__city_address
+            font-size: 14px
+            margin-top: 10px
+            color: #797986
+        &__city_route
+            margin-top: 10px
+            font-size: 14px
+            a
+                color: red
+        &__city_operating_mode
+            margin-top: 20px
+            color: #262633
+            font-size: 14px
+.about
+    background: linear-gradient(to right, #222225 50%, #2A2A2E 50%)
+    .container
+        display: flex
+        justify-content: space-between
+        padding: 63px 0 43px
+    &__navigation
+        ul
+            list-style: none
+            padding: 0
+        &__materials__list
+            height: 165px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            li a
+                color: #fff
+                font-size: 24px
+        &__list
+            margin-top: 70px
+            width: 490px
+            display: flex
+            flex-wrap: wrap
+            line-height: 30px
+            &__item
+                margin-right: 15px
+                a
+                    font-size: 15px
+                    color: #797986
+                    transition: color .5s ease
+                a:hover
+                    color: #fff
+    &__contacts
+        width: 520px
+        &__back_call
+            display: flex
+            justify-content: space-between
+            &__phone
+                font-size: 30px
+                font-weight: 600
+                a
+                    color: #fff
+            &__button
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 190px
+                height: 52px
+                border: solid 1px #c4c4c4
+                border-radius: 14px
+                color: #fff
+                text-transform: uppercase
+        &__email
+            margin-top: 20px
+            a
+                color: #F23147
+                font-size: 24px
+        &__address
+            margin-top: 140px
+            color: #fff
+            font-size: 16px
+footer
+    background: linear-gradient(to right, #222225 50%, #2A2A2E 50%)
+    border-top: 1px solid #4b4b4b
+    .copyright
+        padding: 23px 0 30px
+        &__data
+            color: #797986
+            font-size: 13px
+
+
