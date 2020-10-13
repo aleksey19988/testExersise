@@ -11,10 +11,20 @@
 </head>
 <body>
     <header>
+        <div class="header__menu">
+            <ul class="header__menu__list">
+                <li class="header__menu__list__item"><a href="#">Упаковка</a></li>
+                <li class="header__menu__list__item"><a href="#">Оборудование</a></li>
+                <li class="header__menu__list__item"><a href="#">Сервис и запчасти</a></li>
+            </ul>
+        </div>
         <div class="container">
-            <div class="header__hamburger"></div>
+            <div class="header__hamburger">
+                <div class="header__hamburger__top_border"></div>
+                <div class="header__hamburger__bottom_border"></div>
+            </div>
             <nav class="header__nav">
-                <ul>
+                <ul class="header__nav__list">
                     <li class="header__nav__item"><a href="#">Упаковка</a></li>
                     <li class="header__nav__item"><a href="#">Оборудование</a></li>
                     <li class="header__nav__item "><a href="#">Сервис и запчасти</a></li>
@@ -264,5 +274,6 @@
         </div>
     </footer>
     <script src="bundle.js"></script>
+    <script src="../src/hamburger_menu.js"></script>
 </body>
 </html>

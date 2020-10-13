@@ -11,32 +11,43 @@ header
     height: 92px
     width: 100%
     padding: 19px 0 29px
+    position: relative
     .container
         display: flex
         align-items: center
         justify-content: space-between
+    .header__menu
+        position: absolute
+        top: 45px
+        width: 100%
+        transform: translateY(-500px)
+        transition: all 1s ease
+        &__list
+            list-style: none
+            padding-left: 18px
+            height: 20vh
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            background-color: #fff
     .header__hamburger
         width: 32px
         height: 10px
-        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &__top_border
+            width: 32px
+            height: 2px
+            background-color: #000
+            transition: all .5s ease
+        &__bottom_border
+            width: 17px
+            height: 2px
+            background-color: #000
+            transition: all .5s ease
     .header__hamburger:hover
         cursor: pointer
-    .header__hamburger::before
-        position: absolute
-        content: ''
-        top: 0
-        left: 0
-        width: 32px
-        height: 2px
-        background-color: #000
-    .header__hamburger::after
-        position: absolute
-        content: ''
-        bottom: 0
-        left: 0
-        width: 17px
-        height: 2px
-        background-color: #000
     .header__nav
         width: 408px
         ul
@@ -291,12 +302,6 @@ footer
                         display: none
             &__button
                 display: none
-            &__hamburger
-                width: 23px
-                &::before
-                    width: 23px
-                &::after
-                    width: 12px
             &__logo__img
                 width: 90px
                 height: 30px
@@ -408,12 +413,22 @@ footer
                 display: none
             &__logo
                 margin-left: 30px
+            &__menu-open
+                transform: translateY(0px)
+        .open__hamburger
+            &__top_border
+                transform: rotate(45deg) translateX(6px)
+            &__bottom_border
+                transform: rotate(-45deg) translateX(5px)
+                width: 32px
+            
     .contacts__header
         &__content
             font-size: 22px
     .contacts_and_feedback_form
         &__feedback_form
             max-width: 287px
+            margin-top: 20px
             &__data
                 &__checkbox
                     display: flex
@@ -450,5 +465,3 @@ footer
                         font-size: 20px
     footer
         background: #2A2A2E
-        
-                
